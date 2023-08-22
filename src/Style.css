@@ -1,0 +1,81 @@
+html {
+  --color-1: #a29edc;
+  --color-2: #283047;
+  --color-3: #5b5b8e;
+  --color-4: #06060e;
+  --color-5: #f0f2f0;
+  --color-6: #e5e5e5;
+  --gap-small: 0.625rem;
+  --gap-normal: 1.25rem;
+}
+
+body {
+  font-family: 'sans-serif';
+  margin: 0px;
+  color: var(--color-1);
+  background-color: var(--color-4);
+}
+
+.box {
+  padding: var(--gap-normal);
+  border-radius: var(--gap-normal);
+  background: var(--color-5);
+}
+
+button {
+  font-family: sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  margin: 0px;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.flex {
+  display: flex;
+  gap: var(--gap-normal);
+}
+
+.flex>* {
+  flex: 1;
+}
+
+.mb {
+  margin-bottom: var(--gap-normal);
+}
+
+.bg-1 {
+  background: var(--color-1);
+}
+
+.bg-2 {
+  background: var(--color-2);
+}
+
+.bg-3 {
+  background: var(--color-3);
+}
+
+.bg-4 {
+  background: var(--color-4);
+}
+
+.bg-5 {
+  background: var(--color-5);
+}
+
+.container {
+  display: grid;
+  padding: var(--gap-normal);
+  gap: var(--gap-normal);
+}
