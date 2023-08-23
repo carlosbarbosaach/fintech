@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  font-family: 'sans-serif';
+  font-family: sans-serif;
   margin: 0px;
   color: var(--color-1);
   background-color: var(--color-4);
@@ -81,12 +81,12 @@ ul {
 }
 
 .resumo {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 600;
 }
 
 .resumo h2 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-bottom: var(--gap-normal);
-  color: var(--color-4);
+  color: var(--color-2);
 }

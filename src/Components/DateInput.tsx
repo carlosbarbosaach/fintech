@@ -2,8 +2,8 @@ import React, { ComponentProps } from 'react'
 
 const generalStyle: React.CSSProperties = {
   fontSize: "1rem",
-  color: "var(--color-1)",
-  padding: "var(--gap-small) .75rem",
+  color: "var(--color-2)",
+  padding: "var(--gap-small) 1.5rem",
   backgroundColor: "var(--color-6)",
   borderRadius: "var(--gap-normal)",
 }
