@@ -1,3 +1,9 @@
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 html {
   --color-1: #a29edc;
   --color-2: #283047;
@@ -16,6 +22,10 @@ body {
   margin: 0px;
   color: var(--color-1);
   background-color: var(--color-4);
+}
+
+.color-title {
+  color: var(--color-6);
 }
 
 .box {
@@ -80,8 +90,53 @@ ul {
   display: grid;
   padding: var(--gap-normal);
   gap: var(--gap-normal);
+  grid-template-columns: 240px auto;
 }
 
+/* sidenav  */
+
+.sidenav li:hover span {
+  background: var(--color-3);
+}
+
+.sidenav li {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-small);
+}
+
+.sidenav li span {
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--color-6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--gap-normal);
+}
+
+.sidenav li a {
+  flex: 1;
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-decoration: none;
+  margin: 0.25rem 0;
+  color: var(--color-4);
+  padding: var(--gap-small);
+}
+
+/* fim sidenav  */
+
+/* dateRange  */
+.daterange {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap-normal);
+}
+
+/* fim dateRange  */
+
+/* resumo  */
 .resumo {
   font-size: 1.2rem;
   font-weight: 600;
@@ -93,8 +148,81 @@ ul {
   color: var(--color-2);
 }
 
+/* fim resumo  */
+
 .hover-style:hover {
   transform: scale(0.9);
   transition-duration: 0.9s;
   background: var(--color-hover-1) !important;
+}
+
+/* venda  */
+
+.venda {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  gap: var(--gap-normal);
+  margin-bottom: var(--gap-small);
+  align-items: center;
+}
+
+.venda div:last-child {
+  justify-self: end;
+}
+
+.venda a {
+  text-decoration: nome;
+  color: inherit;
+}
+
+/* .title-venda {
+  color: var(--color-4);
+} */
+
+/* small screen  */
+
+@media (max-width: 1000px) {
+  .resumo {
+    flex-direction: column;
+  }
+
+  .daterange {
+    grid-template-columns: 1fr;
+  }
+
+  .daterange :last-child {
+    grid-row: 1;
+  }
+}
+
+@media (max-width: 700px) {
+  html {
+    --gap-small: 0.5rem;
+    --gap-normal: 0.75rem
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+
+  .sidenav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .sidenav li a {
+    font-size: 0.875rem;
+  }
+
+  .venda {
+    grid-template-columns: 1fr;
+  }
+
+  .venda div :last-child {
+    justify-self: start;
+  }
 }
