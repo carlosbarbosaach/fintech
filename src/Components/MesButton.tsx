@@ -38,7 +38,7 @@ const MesButton = ({ n }: { n: number }) => {
   }
 
   return (
-    <button style={style} onClick={() => setMes(n)}>
+    <button className="hover-style" style={style} onClick={() => setMes(n)}>
       {nomeMes(n)}
     </button>
   );

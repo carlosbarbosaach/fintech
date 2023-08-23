@@ -7,6 +7,8 @@ html {
   --color-6: #e5e5e5;
   --gap-small: 0.625rem;
   --gap-normal: 1.25rem;
+  /* hover */
+  --color-hover-1: #7b7ba4;
 }
 
 body {
@@ -89,4 +91,10 @@ ul {
   font-size: 1.3rem;
   margin-bottom: var(--gap-normal);
   color: var(--color-2);
+}
+
+.hover-style:hover {
+  transform: scale(0.9);
+  transition-duration: 0.9s;
+  background: var(--color-hover-1) !important;
 }
